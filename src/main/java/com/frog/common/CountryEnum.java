@@ -1,8 +1,11 @@
-## 枚举类
+package com.frog.common;
 
-for example:
+import com.baomidou.mybatisplus.annotation.EnumValue;
+import lombok.Getter;
 
-```java
+/**
+ * @author liuhuan
+ */
 @Getter
 public enum CountryEnum {
 
@@ -13,7 +16,7 @@ public enum CountryEnum {
     GB("GB", "英国"),
     VN("VN", "越南"),
     NULL("NULL", "空");
-    
+
     /** 数据库存储用 */
     @EnumValue
     private String code;
@@ -32,10 +35,8 @@ public enum CountryEnum {
         }
         return NULL;
     }
-    
+
     public static boolean isCN(String code) {
         return CN.code.equals(code);
     }
 }
-```
-
