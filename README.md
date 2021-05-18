@@ -1,2 +1,3 @@
 # Refactor
-Refactoring tips
+Refactoring tip, Help you write elegant code.
+
